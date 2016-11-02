@@ -13,12 +13,13 @@
         android:text="Select activity:"/>
                 
         <Button
-        android:id="@+id/mainButton5"
+        android:id="@+id/button_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dip"
         android:textColor="@color/orange"
-        android:text="Activity5" />
+        android:text="Activity_chat" />
+
     
 </LinearLayout>
 

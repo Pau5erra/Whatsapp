@@ -6,23 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity0 extends Activity implements View.OnClickListener {
+public class Main extends Activity implements View.OnClickListener {
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
 
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
-    ((Button) findViewById(R.id.mainButton5)).setOnClickListener(this);
+    ((Button) findViewById(R.id.button_chat)).setOnClickListener(this);
   }
 
   public void onClick(View arg0) {
 
-
-    if (arg0 == findViewById(R.id.mainButton5)) {
-      Intent intent = new Intent(this, Activity5.class);
+    if (arg0 == findViewById(R.id.button_chat)) {
+      Intent intent = new Intent(this, Activity_chat.class);
       startActivity(intent);
     }
+
 
   }
 
