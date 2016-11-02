@@ -18,7 +18,7 @@ public class Activity5 extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.main5_v0);
+    setContentView(R.layout.activity_chat);
 
     conversation = (ListView) findViewById(R.id.conversation);
     messages = new ArrayList<String>();
