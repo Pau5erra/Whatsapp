@@ -39,6 +39,8 @@ public class Activity_chat extends Activity {
         if(input_text.getEditableText().toString().equals("")) return;
 
         //...
+        messages.add(input_text.getEditableText().toString());
+        input_text.setText("");
 
         conversation.post(new Runnable() {
             @Override
