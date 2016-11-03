@@ -41,6 +41,21 @@ public class Main extends Activity implements View.OnClickListener {
       nick_label = (EditText) findViewById(R.id.nick);
       nick_string = nick_label.getText().toString();
 
+      if(server_string.isEmpty()){
+        server_label.setText("LocalHost");
+        server_string = server_label.getText().toString();
+      }
+
+      if(port_string.isEmpty()){
+        port_label.setText("DefaultPort");
+        port_string = port_label.getText().toString();
+      }
+
+      if(nick_string.isEmpty()){
+        nick_label.setText("User");
+        nick_string = nick_label.getText().toString();
+      }
+
       intent.putExtra("Server", server_string);
       intent.putExtra("Port", port_string);
       intent.putExtra("Nick", nick_string);

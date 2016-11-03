@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Pau
+ * Created by Pau y Dani
  */
 
 public class Activity_chat extends Activity{
@@ -55,6 +55,26 @@ public class Activity_chat extends Activity{
 
         //...
         messages.add(nick + " :" +input_text.getEditableText().toString());
+        input_text.setText("");
+
+        conversation.post(new Runnable() {
+            @Override
+            public void run() {
+                conversation.setSelection(conversation.getCount() - 1);
+            }
+        });
+
+        messages.add("Server Message");
+        input_text.setText("");
+
+        conversation.post(new Runnable() {
+            @Override
+            public void run() {
+                conversation.setSelection(conversation.getCount() - 1);
+            }
+        });
+
+        messages.add("Fecha");
         input_text.setText("");
 
         conversation.post(new Runnable() {

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backyard_bicycle">
+    android:background="@drawable/fondo">
 
     <TextView
         android:id="@+id/title"
@@ -15,8 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="28dp"
-        android:rotationX="45"
+        android:textSize="18dp"
         />
 
 
@@ -52,7 +51,7 @@
             android:paddingLeft="4dp"
             android:hint="Type text here"
             android:background="@color/grey"
-            android:textColor="@color/orange"
+            android:textColor="@color/black"
             android:inputType="textNoSuggestions|textVisiblePassword"
             android:text="" />
 
